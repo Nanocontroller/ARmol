@@ -24,7 +24,7 @@
 
 <div id="webXR" class="demo">
 
-  <model-viewer src="./assets/5c8j.gltf" poster="./assets/5c8j.png" shadow-intensity="1" ar ar-scale="fixed" camera-controls alt="A 3D model carousel">
+  <model-viewer src="./assets/5c8j.gltf" poster="./assets/5c8j.png" shadow-intensity="1" ar ar-scale="fixed" camera-controls alt="A 3D model carousel" ar-modes="scene-viewer webxr quick-look">
   
     <button slot="ar-button" id="ar-button">
       View in your space
@@ -36,9 +36,9 @@
 
     <div class="slider">
       <div class="slides">
-        <button class="slide selected" onclick="switchSrc(this, 'protein00')" style="background-image: url('./assets/5c8j.png');">
+        <button class="slide selected" onclick="switchSrc(this, './assets/5c8j-colors.gltf')" style="background-image: url('./assets/5c8j-colors.png');">
 
-        </button><button class="slide" onclick="switchSrc(this, 'protein00')" style="background-image: url('./assets/5c8j.png');">
+        </button><button class="slide" onclick="switchSrc(this, 'protein01')" style="background-image: url('./assets/5c8j-colors.png');">
       </div>
     </div>
   </model-viewer>
