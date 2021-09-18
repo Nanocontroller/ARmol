@@ -1,5 +1,5 @@
-# ARmol
+# proteinAR
 
 ---
 
-Visualazing molecules in AR
+Visualazing protein structures in AR
