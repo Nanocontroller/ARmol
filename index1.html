@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>&lt;model-viewer&gt; template</title>
+    <meta charset="utf-8">
+    <meta name="description" content="&lt;model-viewer&gt; template">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" href="./styles.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <!-- <model-viewer> HTML element -->
+    <model-viewer src="structure2.glb" ar ar-modes="scene-viewer webxr quick-look" camera-controls poster="poster.webp" shadow-intensity="2" shadow-softness="0">
+      <button class="Hotspot" slot="hotspot-1" data-position="-19.84217417210465m 36.107673922976744m 44.045781346125125m" data-normal="0.975884463659764m 0.17864058033025976m 0.12544742582756732m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">CD45b</div>
+      </button><button class="Hotspot" slot="hotspot-2" data-position="-24.967103778832552m -30.192442299214093m 75.44546873560068m" data-normal="0.5730602009058466m 0.604240750767959m 0.5536200152172283m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">CD45a</div>
+      </button><button class="Hotspot" slot="hotspot-3" data-position="15.985101282795085m 4.083561384930022m 0.3101917848111384m" data-normal="0.9910036946062069m -0.09574058966689046m -0.09351693305003289m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">R1</div>
+      </button><button class="Hotspot" slot="hotspot-4" data-position="-15.06731107661517m 27.80511802575137m -29.796822504135292m" data-normal="0.6250362705310375m 0.14560467269766939m 0.7668956511868198m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">R3</div>
+      </button><button class="Hotspot" slot="hotspot-5" data-position="6.537256641655944m 27.357678344475403m -49.766110632045354m" data-normal="0.33766250387547475m 0.9405379712632576m -0.03704535178049493m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">R2</div>
+      </button><button class="Hotspot" slot="hotspot-6" data-position="0.002346807976209675m -19.01619220686058m -2.8772778259450433m" data-normal="0.8157127398150862m 0.49644818377591937m -0.2969039018419202m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">D3a</div>
+      </button><button class="Hotspot" slot="hotspot-7" data-position="-13.21087675990816m 12.799865733194338m -35.554612834839645m" data-normal="0.9473570997226026m -0.03634385190692957m -0.3181094937812234m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">D3b</div>
+      </button>
+      <div class="progress-bar hide" slot="progress-bar">
+          <div class="update-bar"></div>
+      </div>
+      <button slot="ar-button" id="ar-button">
+          View in your space
+      </button>
+      <div id="ar-prompt">
+          <img src="ar_hand_prompt.png">
+      </div>
+    </model-viewer>  
+    <script src="script.js"></script>
+    <!-- Loads <model-viewer> for browsers: -->
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.0.1/model-viewer.min.js"></script>
+  </body>
+</html>
